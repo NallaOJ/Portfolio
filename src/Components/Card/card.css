@@ -1,0 +1,35 @@
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.Card {
+    border: 2px solid #C47EFFA4;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    gap: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.image-card {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
