@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './projets.css';
 import Card from '../../Components/Card';
 import Kasa from '../../Assets/kasa.webp';
@@ -35,13 +35,5 @@ const Projets = () => {
   );
 };
 
-/*const styles = {
-  container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexWrap: 'wrap',
-  }
-};*/
 
 export default Projets;
