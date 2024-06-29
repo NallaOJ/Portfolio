@@ -23,10 +23,17 @@
     margin: 16px;
     gap: 15px;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     text-align: center;
+    width: 400px;
 }
+
+.Card:hover {
+  transform: scale(1.05); /* Agrandit légèrement la carte au survol */
+}
+
 
 .image-card {
   width: 100%;

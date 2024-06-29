@@ -1,8 +1,7 @@
-.texte-about {
-  font-size: 24px;
+#a-propos {
+  font-size: 28px;
   text-align: center;
-  margin-bottom: 120px;
-  margin-top: 120px;
+  margin: 120px;
 }
 
 .about {
@@ -10,16 +9,17 @@
   background-size: cover;
   display: flex;
   justify-content: flex-start;
-  position:relative;
   align-items: center;
   padding-left: 15px;
-  height: 800px;
+  width: 100%;
+  height: 1000px;
   font-size: 25px;
+  position: relative;
 }
 
 .about-texte {
-padding-left: 35px;
-font-size: 30px;
+  padding-left: 35px;
+  font-size: 30px;
 }
 
 .about-next a {
@@ -34,12 +34,14 @@ font-size: 30px;
   min-height: 100vh;
   background-color: #ededed;
 }
+
 .loader {
   max-width: 15rem;
   width: 100%;
   height: auto;
   stroke-linecap: round;
 }
+
 circle {
   fill: none;
   stroke-width: 3.5;
@@ -50,32 +52,94 @@ circle {
   transform-origin: 170px 170px;
   will-change: transform;
 }
+
 circle:nth-of-type(1) {
   stroke-dasharray: 550px;
 }
+
 circle:nth-of-type(2) {
   stroke-dasharray: 500px;
 }
+
 circle:nth-of-type(3) {
   stroke-dasharray: 450px;
 }
+
 circle:nth-of-type(4) {
   stroke-dasharray: 300px;
 }
+
 circle:nth-of-type(1) {
   animation-delay: -0.15s;
 }
+
 circle:nth-of-type(2) {
   animation-delay: -0.3s;
 }
+
 circle:nth-of-type(3) {
   animation-delay: -0.45s;
 }
+
 circle:nth-of-type(4) {
   animation-delay: -0.6s;
 }
+
 @keyframes preloader {
   50% {
     transform: rotate(360deg);
- }
+  }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  #a-propos {
+    font-size: 24px;
+    margin: 80px;
+  }
+
+  .about {
+    height: 800px;
+  }
+
+  .about-texte {
+    font-size: 26px;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #a-propos {
+    font-size: 20px;
+    margin: 60px;
+  }
+
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    padding-left: 10px;
+  }
+
+  .about-texte {
+    font-size: 22px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #a-propos {
+    font-size: 18px;
+    margin: 40px;
+  }
+
+  .about {
+    height: 400px;
+  }
+
+  .about-texte {
+    font-size: 18px;
+    padding: 0 10px;
+    text-align: center;
+  }
 }

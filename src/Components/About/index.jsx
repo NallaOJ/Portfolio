@@ -3,7 +3,8 @@ import './about.css'
 
 export default function About() {
 return (
-  <section className="section-about">
+  
+  <section id="section-about">
     <div className="about">
     <div className="about-texte">
     <h1>JEANNETTE Ornella</h1>
@@ -17,9 +18,9 @@ return (
 </div>
 
 <div>
-  <p className="texte-about">
-  Développeuse web junior passionnée par la création de sites web interactifs, réactifs et esthétiques. <br />
-   J'aime relever des défis complexes et apprendre continuellement de nouvelles techniques et technologies pour perfectionner <br /> 
+  <p id='a-propos'>
+  Développeuse web junior passionnée par la création de sites web interactifs, réactifs et esthétiques.
+   J'aime relever des défis complexes et apprendre continuellement de nouvelles techniques et technologies pour perfectionner
    mes compétences et offrir des solutions innovantes.
   </p>
 </div>

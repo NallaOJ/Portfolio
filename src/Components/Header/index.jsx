@@ -1,28 +1,26 @@
-import React from 'react';
-import './header.css'
-import { useTranslation } from 'react-i18next';
+import React, { useState } from 'react';
+import './header.css';
+import avatar from '../../Assets/avatar.jpg';
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
-  
+
   return (
-    <div className='header'>
-      <h1>OJ</h1>
-      <div>
-      <button onClick={() => changeLanguage('en')}>English</button>
-      <button onClick={() => changeLanguage('fr')}>Français</button>
-    </div>
-      <nav className='nav-header'>
+    <nav className='header'>
+      <img className='avatar' src={avatar} alt='' />
+      <div className={`links ${menuOpen ? 'open' : ''}`}>
         <a href="#a-propos">À Propos</a>
-        <a href="#mes-projets">Mes Projets</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#competences">Compétences</a>
         <a href="#contact">Contact</a>
-      </nav>
-    </div>
-         
+      </div>
+      <button className="hamburger" onClick={toggleMenu}>
+        ☰
+      </button>
+    </nav>
   );
 }

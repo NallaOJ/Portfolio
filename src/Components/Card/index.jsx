@@ -1,9 +1,13 @@
-import React from 'react'
-import './card.css'
+import React from 'react';
+import './card.css';
 
 const Card = ({ title, content, image, url }) => {
   const handleClick = () => {
-    window.location.href = url;
+    if (url) {
+      window.open(url, '_blank'); 
+    } else {
+      console.warn('URL not provided.'); 
+    }
   };
 
   return (
@@ -14,6 +18,5 @@ const Card = ({ title, content, image, url }) => {
     </div>
   );
 };
-
 
 export default Card;

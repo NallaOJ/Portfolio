@@ -13,27 +13,28 @@ const Projets = () => {
   };
 
   return (
-    <div className="projet-container">
-      <a href="#mesprojets" className='texte-projet'>Mes Projets</a>
+    <div id='portfolio'>
+      <h2  className='texte-projet'>Portfolio</h2>
       
       <div className='card-list'>
         <Card
-          title="Card 1"
-          content="This is the content of Card 1."
+          title="Mission"
+          content="Développement d'une interface web avec React et Sass."
           image={Kasa}
           onClick={() => handleCardClick('Card 1', Kasa)}
         />
         <Card
-          title="Card 2"
-          content="This is the content of Card 2."
+          title="Mission"
+          content="Création d'un environement Frontend responsive."
           image={booki}
-          onClick={() => handleCardClick('Card 2', booki)}
+          url="https://site-booki-oc-oj.netlify.app/"
         />
         <Card
-          title="Card 3"
-          content="This is the content of Card 3."
+          title="Mission"
+          content="Optimisation, Débug et référencement SEO."
           image={Nina}
           url="https://nina-carducci-oc-oj.netlify.app"
+          
         />
       </div>
     </div>
