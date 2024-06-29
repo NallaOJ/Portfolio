@@ -6,11 +6,6 @@ import booki from '../../Assets/booki-home.webp';
 import Nina from '../../Assets/Nina.webp'
 
 const Projets = () => {
-  const [clickedImage, setClickedImage] = useState(null);
-
-  const handleCardClick = (cardTitle, image) => {
-    setClickedImage(image);
-  };
 
   return (
     <div id='portfolio'>
@@ -21,7 +16,6 @@ const Projets = () => {
           title="Mission"
           content="Développement d'une interface web avec React et Sass."
           image={Kasa}
-          onClick={() => handleCardClick('Card 1', Kasa)}
         />
         <Card
           title="Mission"
