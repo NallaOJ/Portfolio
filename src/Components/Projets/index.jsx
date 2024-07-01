@@ -14,11 +14,6 @@ const Projets = () => {
       <div className='card-list'>
         <Card
           title="Mission"
-          content="Développement d'une interface web avec React et Sass."
-          image={Kasa}
-        />
-        <Card
-          title="Mission"
           content="Création d'un environement Frontend responsive."
           image={booki}
           url="https://site-booki-oc-oj.netlify.app/"
