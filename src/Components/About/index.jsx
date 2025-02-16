@@ -7,25 +7,18 @@ return (
   <section id="section-about">
     <div className="about">
     <div className="about-texte">
-    <h1>JEANNETTE Ornella</h1>
+    <h1>HELLO, <br/>JE SUIS ORNELLA,</h1>
     <p>
-      Développeuse web, passionné par la création d'interfaces interactives et fonctionnelles.
+      Développeuse web junior Front-End
     </p>
     </div>
+    </div>
 
-
-
-</div>
-
-<div>
-  <p id='a-propos'>
-  Développeuse web junior passionnée par la création de sites web interactifs, réactifs et esthétiques.
-   J'aime relever des défis complexes et apprendre continuellement de nouvelles techniques et technologies pour perfectionner
-   mes compétences et offrir des solutions innovantes.
-  </p>
-</div>
-
-  </section>
- 
+   <div className='a-propos'>
+       <p className='text-apropos'>
+   Hello, je suis Ornella Jeannette, Développeur Web Junior, passionné par les nouvelles technologies et leur impact sur l’expérience utilisateur. J’aime concevoir des interfaces intuitives et performantes qui facilitent la navigation et améliorent la productivité. Toujours en quête d’apprentissage, je suis motivé par l’envie de relever de nouveaux défis pour perfectionner mes compétences et offrir des solutions innovantes.
+      </p>
+  </div>
+</section>
 )
-}
+};

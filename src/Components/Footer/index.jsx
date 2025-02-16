@@ -5,7 +5,7 @@ import logoLinkedin from '../../Assets/logo-linkedin.webp'
 
 function Footer() {
   return (
-    <div id='contact'>
+    <div id='footer'>
       <div className='logo-footer'>
         <a href="https://github.com/NallaOJ" target="_blank" rel="noopener noreferrer">
           <img src={logoGithub} alt="Logo GitHub" className="logo-footer1" />

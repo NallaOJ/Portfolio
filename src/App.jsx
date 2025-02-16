@@ -2,20 +2,22 @@ import React from 'react';
 import './App.css';
 import Header from './Components/Header';
 import About from './Components/About';
-import Projets from './Components/Projets';
 import Competences from './Components/Competences';
+import Portfolio from './Components/Portfolio';
 import Footer from './Components/Footer';
+import Contact from './Components/Contact';
 
 function App() {
  
 
   return (
-    <div>
+    <div className="App">
     <Header />
     <main>
     <About />
-    <Projets />
     <Competences />
+    <Portfolio />
+    <Contact />
     </main>
     <Footer />
   </div>

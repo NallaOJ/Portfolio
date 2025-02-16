@@ -1,0 +1,151 @@
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0turn;
+  inherits: false;
+}
+
+.Img {
+  position: absolute;
+  object-fit:scale-down;
+}
+
+#portfolio {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.portfolio-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-title h2{
+  color: #707070;
+  font-size: 100px;
+  line-height: 60px;
+}
+
+.portfolio-title p{
+  margin: 30px 30px 0 15px;
+}
+
+.projets {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  gap: 16px 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: 2s gradient-angle infinite linear;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#2e5827, #0f2d1f),
+    conic-gradient(
+      from var(--gradient-angle),
+      #285827 0%,
+      #81c73c 37%,
+      #9cf990 30%,
+      #3cc741 33%,
+      #275834 40%,
+      #275838 50%,
+      #3cc73c 77%,
+      #aef990 80%,
+      #43c73c 83%,
+      #275832 90%
+    );
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  width: 100%;
+  max-width: 430px;
+  padding: 20px;
+  text-decoration: none;
+  color: currentColor;
+  border-radius: 20px;
+  place-content: center;
+  place-items: center;
+  row-gap: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+@keyframes gradient-angle {
+  to {
+    --gradient-angle: 1turn;
+  }
+}
+
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  gap: 16px 40px;
+}
+
+.card h2 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 12px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+
+}
+
+@keyframes gradient-angle {
+  to {
+    --gradient-angle: 1turn;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .portfolio-title h2 {
+    font-size: 70px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-title h2 {
+    font-size: 50px; 
+    line-height: 40px;
+  }
+
+  .portfolio-title {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 580px) {
+  .projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 16px;
+    margin: 40px;
+    align-items: center;
+  }
+
+  .card {
+    display: grid;
+    width: 100%;
+    max-width: 430px;
+    gap:20px
+  }
+}
+
+

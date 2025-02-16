@@ -1,39 +1,43 @@
-import React from "react";
+import React, { useState } from 'react';
 import './competences.css';
 
 
-export default function Competences() {
-return (
-  <section id="competences">
-   <svg width="100%" height="35px" viewBox="0 0 100 20" preserveAspectRatio="none" >
-  <path d="M0 30 V12 Q30 17 55 12 T100 11 V30z" fill="#8E4EC6" />
-</svg>
-<h2 className="competences-texte">Compétences</h2>
-<div className="container-card-competences">
-<div className="card-competences">
-<ul className="liste-competences">
-  <li>HTML</li>
-  <li>REACT</li>
-  <li>JAVASCRIPT</li>
-  <li>CSS</li>
-</ul>
-</div>
-<div className="card-competences">
-<ul className="liste-competences">
-  <li>SEO</li>
-  <li>MAINTENANCE WEB</li>
-  <li>OPTIMISATION & DEBUG</li>
-</ul>
-</div>
-<div className="card-competences">
-<ul className="liste-competences">
-  <li>SOLUTION TECHNIQUE</li>
-  <li>DECOUPAGE DES TÄCHES</li>
-  <li>INSTALLATION D'ENVIRONNEMENT FRONTEND</li>
-</ul>
-</div>
-</div>
+const itemData = [
+  { name: "HTML & CSS", columns: 2, rows: 1 },
+  { name: "JavaScript", columns: 1, rows: 2 },
+  { name: "React", columns: 1, rows: 1 },
+  { name: "Node.js", columns: 2, rows: 2 },
+  { name: "MongoDB", columns: 1, rows: 1 },
+  { name: "Git & GitHub", columns: 2, rows: 1 },
+  { name: "Optimisation & Debug", columns: 1, rows: 2 },
+  { name: "API REST", columns: 1, rows: 2 },
+  { name: "Responsive Design", columns: 3, rows: 1 },
+  { name: "SEO", columns: 2, rows: 1 }
+];
+
+
+const Competences = () => {
+ return (
+      <section id="competences">
+    <div className="competences-container">
+      <div className="competences-title">
+        <h2>COMPETENCES</h2>
+        <p>Mes competences <br/>COMPETENCES</p>
+      </div>
+    </div>
+    <div id="grid-container">
+      {itemData.map((item, index) => (
+        <div
+          key={index}
+          className="grid-item"
+          style={{ gridColumn: `span ${item.columns}`, gridRow: `span ${item.rows}` }}
+        >
+          {item.name}
+        </div>
+      ))}
+    </div>
     </section>
- 
-)
-}
+  );
+};
+
+export default Competences;

@@ -1,15 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background-color:#18111B;
-  color:#ECD9FA;
-  margin: 0;
+  background-color:#252627;
+  color: #e7f4ed;
   font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+}
+
+
+main {
+  height: 100%;
+  width: 100vw;
+}
+
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
